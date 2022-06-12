@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import MainPageLayout from '../components/MainPageLayout';
+
 
 const About = () => {
   return (
-    <div>
+    <MainPageLayout>
       This is staaarred page...
-    </div>
+    </MainPageLayout>
   )
 }
 
