@@ -58,12 +58,7 @@ const Home = () => {
 
   return (
     <MainPageLayout>
-        <input type="text" placeholder='Search for something' onChange={onInputChange} onKeyDown={onKeyDown} value={input} />
-         <button type='button' onClick={onSearch}>Search</button>
-         {/* This is hooome page... */}
-         {renderResults()}
-
-         <div>
+        <div>
             <label htmlFor="shows-search">
               Shows <input id="shows-search" type="radio" value="shows" checked={isShowSearch} onChange={onRadioChange} />
             </label>
@@ -72,6 +67,12 @@ const Home = () => {
               Actors <input id="actors-search" type="radio" value="people" checked={!isShowSearch} onChange={onRadioChange} />
             </label>
          </div>
+        <input type="text" placeholder='Search for something' onChange={onInputChange} onKeyDown={onKeyDown} value={input} />
+         <button type='button' onClick={onSearch}>Search</button>
+         {/* This is hooome page... */}
+         {renderResults()}
+
+         
     </MainPageLayout>
   )
 }
